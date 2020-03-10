@@ -15,7 +15,7 @@
 api = "0.2"
 
 [buildpack]
-id      = "packetoio/amazon-corretto"
+id      = "paketo-buildpacks/amazon-corretto"
 name    = "Paketo Amazon Corretto Buildpack"
 version = "{{.Version}}"
 
