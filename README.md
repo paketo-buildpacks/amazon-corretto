@@ -1,4 +1,4 @@
-# `amazon-corretto`
+# `paketo-buildpacks/amazon-corretto`
 The Paketo Amazon Corretto Buildpack is a Cloud Native Buildpack that provides the Amazon Corretto implementations of JREs and JDKs.
 
 This buildpack is designed to work in collaboration with other buildpacks which request contributions of JREs and JDKs.
