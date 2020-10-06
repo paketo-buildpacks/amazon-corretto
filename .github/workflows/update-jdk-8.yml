@@ -43,7 +43,7 @@ jobs:
               uses: docker://ghcr.io/paketo-buildpacks/actions/amazon-corretto-dependency:main
               with:
                 glob: amazon-corretto-*-linux-x64.tar.gz
-                repository: corretto-jdk-8
+                repository: corretto-8
             - id: buildpack
               name: Update Buildpack Dependency
               run: |
