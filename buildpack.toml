@@ -80,6 +80,18 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
   uri  = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
 
 [[metadata.dependencies]]
+id      = "jdk"
+name    = "Corretto JDK"
+version = "15.0.0"
+uri     = "placeholder"
+sha256  = "placeholder"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "GPL-2.0 WITH Classpath-exception-2.0"
+  uri  = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
+
+[[metadata.dependencies]]
 id      = "jvmkill"
 name    = "JVMKill Agent"
 version = "1.16.0"
