@@ -59,8 +59,8 @@ launch      = true
 id      = "jdk"
 name    = "Corretto JDK"
 version = "8.0.272"
-uri     = "https://corretto.aws/downloads/resources/8.272.10.3/amazon-corretto-8.272.10.3-linux-x64.tar.gz"
-sha256  = "5e06514bc20e2967c3cad0fddc61451370e150a91d6f67b1bf2083b6bbc230d2"
+uri     = "https://corretto.aws/downloads/resources/8.272.10.1/amazon-corretto-8.272.10.1-linux-x64.tar.gz"
+sha256  = "2499a42f65d0166fb1b24140d465bf405741e8b859fa5e7c8bf9095e219391d0"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
@@ -71,8 +71,8 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 id      = "jdk"
 name    = "Corretto JDK"
 version = "11.0.9"
-uri     = "https://corretto.aws/downloads/resources/11.0.9.11.1/amazon-corretto-11.0.9.11.1-linux-x64.tar.gz"
-sha256  = "602d678b8bf4ba02ecc622970287dcfa1edc169fd32e22264230cd4c3d446e92"
+uri     = "https://corretto.aws/downloads/resources/11.0.9.11.1-1/amazon-corretto-11.0.9.11.1-linux-x64.tar.gz"
+sha256  = "27f951f6011c32b4940a4b2af63bfa112d9917487cb89ee3212dedcffa0c203a"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
