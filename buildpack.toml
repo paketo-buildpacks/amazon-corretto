@@ -58,9 +58,9 @@ launch      = true
 [[metadata.dependencies]]
 id      = "jdk"
 name    = "Corretto JDK"
-version = "8.0.275"
-uri     = "https://corretto.aws/downloads/resources/8.275.01.1/amazon-corretto-8.275.01.1-linux-x64.tar.gz"
-sha256  = "25415701c864ec301975097f207e909d065eb7c452a501c0e4b4487e77fbdc7a"
+version = "8.0.282"
+uri     = "https://corretto.aws/downloads/resources/8.282.08.1/amazon-corretto-8.282.08.1-linux-x64.tar.gz"
+sha256  = "5db96ea7c5fa34de4eadbc41e2adf1fccb7e373b5788f77e26e0d69b9e368b7f"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
