@@ -30,7 +30,10 @@ uri  = "https://github.com/paketo-buildpacks/amazon-corretto/blob/main/LICENSE"
 id = "io.buildpacks.stacks.bionic"
 
 [[stacks]]
-id = "org.cloudfoundry.stacks.cflinuxfs3"
+id = "io.paketo.stacks.tiny"
+
+[[stacks]]
+id = "*"
 
 [[metadata.configurations]]
 name        = "BPL_JVM_HEAD_ROOM"
@@ -67,7 +70,7 @@ name    = "Corretto JDK"
 version = "8.0.302"
 uri     = "https://corretto.aws/downloads/resources/8.302.08.1/amazon-corretto-8.302.08.1-linux-x64.tar.gz"
 sha256  = "03c2bffadff35825a6f9e9db453dae29302c82deb824a285e7d030eb13144a84"
-stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
   type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -79,7 +82,7 @@ name    = "Corretto JDK"
 version = "11.0.12"
 uri     = "https://corretto.aws/downloads/resources/11.0.12.7.1/amazon-corretto-11.0.12.7.1-linux-x64.tar.gz"
 sha256  = "9c451d1aec267e6be26a96b59e9f8ab8cf9253b9e0cd469fa2a62391c0dfe0c6"
-stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
   type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -91,7 +94,7 @@ name    = "Corretto JDK"
 version = "16.0.2"
 uri     = "https://corretto.aws/downloads/resources/16.0.2.7.1/amazon-corretto-16.0.2.7.1-linux-x64.tar.gz"
 sha256  = "dd2ef25ee1fe842eb5381a6b62af5c17bb2886e96d44df6e39c0831cb42a7a7a"
-stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
   type = "GPL-2.0 WITH Classpath-exception-2.0"
@@ -103,7 +106,7 @@ name    = "JVMKill Agent"
 version = "1.16.0"
 uri     = "https://github.com/cloudfoundry/jvmkill/releases/download/v1.16.0.RELEASE/jvmkill-1.16.0-RELEASE.so"
 sha256  = "a3092627b082cb3cdbbe4b255d35687126aa604e6b613dcda33be9f7e1277162"
-stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
   [[metadata.dependencies.licenses]]
   type = "Apache-2.0"
