@@ -15,166 +15,157 @@
 api = "0.6"
 
 [buildpack]
-id       = "paketo-buildpacks/amazon-corretto"
-name     = "Paketo Amazon Corretto Buildpack"
-version  = "{{.version}}"
-homepage = "https://github.com/paketo-buildpacks/amazon-corretto"
-description = "A Cloud Native Buildpack that provides the Amazon Corretto implementations of JREs and JDKs"
-keywords    = ["java", "jvm", "jre", "jdk"]
+  description = "A Cloud Native Buildpack that provides the Amazon Corretto implementations of JREs and JDKs"
+  homepage = "https://github.com/paketo-buildpacks/amazon-corretto"
+  id = "paketo-buildpacks/amazon-corretto"
+  keywords = ["java", "jvm", "jre", "jdk"]
+  name = "Paketo Amazon Corretto Buildpack"
+  version = "{{.version}}"
 
-[[buildpack.licenses]]
-type = "Apache-2.0"
-uri  = "https://github.com/paketo-buildpacks/amazon-corretto/blob/main/LICENSE"
-
-[[stacks]]
-id = "io.buildpacks.stacks.bionic"
-
-[[stacks]]
-id = "io.paketo.stacks.tiny"
-
-[[stacks]]
-id = "*"
-
-[[metadata.configurations]]
-name        = "BPL_JVM_HEAD_ROOM"
-description = "the headroom in memory calculation"
-default     = "0"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JVM_LOADED_CLASS_COUNT"
-description = "the number of loaded classes in memory calculation"
-default     = "35% of classes"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JVM_THREAD_COUNT"
-description = "the number of threads in memory calculation"
-default     = "250"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_HEAP_DUMP_PATH"
-description = "write heap dumps on error to this path"
-default     = ""
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JAVA_NMT_ENABLED"
-description = "enables Java Native Memory Tracking (NMT)"
-default     = "true"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JAVA_NMT_LEVEL"
-description = "configure level of NMT, summary or detail"
-default     = "summary"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JMX_ENABLED"
-description = "enables Java Management Extensions (JMX)"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_JMX_PORT"
-description = "configure the JMX port"
-default     = "5000"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_ENABLED"
-description = "enables Java remote debugging support"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_PORT"
-description = "configure the remote debugging port"
-default     = "8000"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BPL_DEBUG_SUSPEND"
-description = "configure whether to suspend execution until a debugger has attached"
-default     = "false"
-launch      = true
-
-[[metadata.configurations]]
-name        = "BP_JVM_VERSION"
-description = "the Java version"
-default     = "11"
-build       = true
-
-[[metadata.configurations]]
-name        = "BP_JVM_TYPE"
-description = "the JVM type - JDK or JRE"
-default     = "JRE"
-build       = true
-
-[[metadata.configurations]]
-name        = "JAVA_TOOL_OPTIONS"
-description = "the JVM launch flags"
-launch      = true
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Corretto JDK"
-version = "8.0.302"
-uri     = "https://corretto.aws/downloads/resources/8.302.08.1/amazon-corretto-8.302.08.1-linux-x64.tar.gz"
-sha256  = "03c2bffadff35825a6f9e9db453dae29302c82deb824a285e7d030eb13144a84"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Corretto JDK"
-version = "11.0.12"
-uri     = "https://corretto.aws/downloads/resources/11.0.12.7.1/amazon-corretto-11.0.12.7.1-linux-x64.tar.gz"
-sha256  = "9c451d1aec267e6be26a96b59e9f8ab8cf9253b9e0cd469fa2a62391c0dfe0c6"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Corretto JDK"
-version = "16.0.2"
-uri     = "https://corretto.aws/downloads/resources/16.0.2.7.1/amazon-corretto-16.0.2.7.1-linux-x64.tar.gz"
-sha256  = "dd2ef25ee1fe842eb5381a6b62af5c17bb2886e96d44df6e39c0831cb42a7a7a"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
-
-[[metadata.dependencies]]
-id      = "jdk"
-name    = "Corretto JDK"
-version = "17.0.0"
-uri     = "https://corretto.aws/downloads/resources/17.0.0.35.1/amazon-corretto-17.0.0.35.1-linux-x64.tar.gz"
-sha256  = "4005f04eaeb0be6460f5f5b13904f8a2619540aa2ce7632fd86fa302bcae6077"
-stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
-
-  [[metadata.dependencies.licenses]]
-  type = "GPL-2.0 WITH Classpath-exception-2.0"
-  uri  = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
+  [[buildpack.licenses]]
+    type = "Apache-2.0"
+    uri = "https://github.com/paketo-buildpacks/amazon-corretto/blob/main/LICENSE"
 
 [metadata]
-pre-package   = "scripts/build.sh"
-include-files = [
-  "LICENSE",
-  "NOTICE",
-  "README.md",
-  "bin/build",
-  "bin/detect",
-  "bin/helper",
-  "bin/main",
-  "buildpack.toml",
-]
+  include-files = ["LICENSE", "NOTICE", "README.md", "bin/build", "bin/detect", "bin/helper", "bin/main", "buildpack.toml"]
+  pre-package = "scripts/build.sh"
+
+  [[metadata.configurations]]
+    default = "0"
+    description = "the headroom in memory calculation"
+    launch = true
+    name = "BPL_JVM_HEAD_ROOM"
+
+  [[metadata.configurations]]
+    default = "35% of classes"
+    description = "the number of loaded classes in memory calculation"
+    launch = true
+    name = "BPL_JVM_LOADED_CLASS_COUNT"
+
+  [[metadata.configurations]]
+    default = "250"
+    description = "the number of threads in memory calculation"
+    launch = true
+    name = "BPL_JVM_THREAD_COUNT"
+
+  [[metadata.configurations]]
+    default = ""
+    description = "write heap dumps on error to this path"
+    launch = true
+    name = "BPL_HEAP_DUMP_PATH"
+
+  [[metadata.configurations]]
+    default = "true"
+    description = "enables Java Native Memory Tracking (NMT)"
+    launch = true
+    name = "BPL_JAVA_NMT_ENABLED"
+
+  [[metadata.configurations]]
+    default = "summary"
+    description = "configure level of NMT, summary or detail"
+    launch = true
+    name = "BPL_JAVA_NMT_LEVEL"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "enables Java Management Extensions (JMX)"
+    launch = true
+    name = "BPL_JMX_ENABLED"
+
+  [[metadata.configurations]]
+    default = "5000"
+    description = "configure the JMX port"
+    launch = true
+    name = "BPL_JMX_PORT"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "enables Java remote debugging support"
+    launch = true
+    name = "BPL_DEBUG_ENABLED"
+
+  [[metadata.configurations]]
+    default = "8000"
+    description = "configure the remote debugging port"
+    launch = true
+    name = "BPL_DEBUG_PORT"
+
+  [[metadata.configurations]]
+    default = "false"
+    description = "configure whether to suspend execution until a debugger has attached"
+    launch = true
+    name = "BPL_DEBUG_SUSPEND"
+
+  [[metadata.configurations]]
+    build = true
+    default = "11"
+    description = "the Java version"
+    name = "BP_JVM_VERSION"
+
+  [[metadata.configurations]]
+    build = true
+    default = "JRE"
+    description = "the JVM type - JDK or JRE"
+    name = "BP_JVM_TYPE"
+
+  [[metadata.configurations]]
+    description = "the JVM launch flags"
+    launch = true
+    name = "JAVA_TOOL_OPTIONS"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Corretto JDK"
+    sha256 = "03c2bffadff35825a6f9e9db453dae29302c82deb824a285e7d030eb13144a84"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://corretto.aws/downloads/resources/8.302.08.1/amazon-corretto-8.302.08.1-linux-x64.tar.gz"
+    version = "8.0.302"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Corretto JDK"
+    sha256 = "9c451d1aec267e6be26a96b59e9f8ab8cf9253b9e0cd469fa2a62391c0dfe0c6"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://corretto.aws/downloads/resources/11.0.12.7.1/amazon-corretto-11.0.12.7.1-linux-x64.tar.gz"
+    version = "11.0.12"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Corretto JDK"
+    sha256 = "dd2ef25ee1fe842eb5381a6b62af5c17bb2886e96d44df6e39c0831cb42a7a7a"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://corretto.aws/downloads/resources/16.0.2.7.1/amazon-corretto-16.0.2.7.1-linux-x64.tar.gz"
+    version = "16.0.2"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
+
+  [[metadata.dependencies]]
+    id = "jdk"
+    name = "Corretto JDK"
+    sha256 = "4005f04eaeb0be6460f5f5b13904f8a2619540aa2ce7632fd86fa302bcae6077"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://corretto.aws/downloads/resources/17.0.0.35.1/amazon-corretto-17.0.0.35.1-linux-x64.tar.gz"
+    version = "17.0.0"
+
+    [[metadata.dependencies.licenses]]
+      type = "GPL-2.0 WITH Classpath-exception-2.0"
+      uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
+
+[[stacks]]
+  id = "io.buildpacks.stacks.bionic"
+
+[[stacks]]
+  id = "io.paketo.stacks.tiny"
+
+[[stacks]]
+  id = "*"
