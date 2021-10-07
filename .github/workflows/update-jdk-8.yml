@@ -46,8 +46,8 @@ jobs:
               with:
                 glob: amazon-corretto-[\d.-]+-linux-x64.tar.gz
                 repository: corretto-8
-            - id: buildpack
-              name: Update Buildpack Dependency
+            - name: Update Buildpack Dependency
+              id: buildpack
               run: |
                 #!/usr/bin/env bash
 
