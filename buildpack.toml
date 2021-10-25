@@ -164,10 +164,10 @@ api = "0.6"
   [[metadata.dependencies]]
     id = "jdk"
     name = "Corretto JDK"
-    sha256 = "4005f04eaeb0be6460f5f5b13904f8a2619540aa2ce7632fd86fa302bcae6077"
+    sha256 = "2ecc551b54c5bee4535b39703a7dd07629385af13b56acd99eb8c65751c42346"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://corretto.aws/downloads/resources/17.0.0.35.1/amazon-corretto-17.0.0.35.1-linux-x64.tar.gz"
-    version = "17.0.0"
+    uri = "https://corretto.aws/downloads/resources/17.0.1.12.1/amazon-corretto-17.0.1.12.1-linux-x64.tar.gz"
+    version = "17.0.1"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
