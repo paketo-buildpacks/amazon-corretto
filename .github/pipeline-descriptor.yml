@@ -31,13 +31,6 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-x64.tar.gz
     repository: corretto-11
-- name:            JDK 16
-  id:              jdk
-  version_pattern: "16\\.[\\d]+\\.[\\d]+"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/amazon-corretto-dependency:main
-  with:
-    glob:       amazon-corretto-[\d.-]+-linux-x64.tar.gz
-    repository: corretto-jdk
 - name:            JDK 17
   id:              jdk
   version_pattern: "17\\.[\\d]+\\.[\\d]+"
