@@ -143,9 +143,9 @@ api = "0.7"
     id = "jdk"
     name = "Corretto JDK"
     purl = "pkg:generic/amazon/corretto-jdk@8.0.322"
-    sha256 = "cb4a7ebb483f02201b7259ac869aed3680f0975e3ac6ee4dfc389dcd48177d93"
+    sha256 = "f10fc46f42df58cf26a4689a7016aa610b691ad4e8be7c349f8651dec79d4e41"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://corretto.aws/downloads/resources/8.342.07.3/amazon-corretto-8.342.07.3-linux-x64.tar.gz"
+    uri = "https://corretto.aws/downloads/resources/8.342.07.4/amazon-corretto-8.342.07.4-linux-x64.tar.gz"
     version = "8.0.342"
 
     [[metadata.dependencies.licenses]]
