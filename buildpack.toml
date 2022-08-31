@@ -19,7 +19,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/amazon-corretto"
   id = "paketo-buildpacks/amazon-corretto"
   keywords = ["java", "jvm", "jre", "jdk"]
-  name = "Paketo Amazon Corretto Buildpack"
+  name = "Paketo Buildpack for Amazon Corretto"
   sbom-formats = ["application/vnd.cyclonedx+json", "application/vnd.syft+json"]
   version = "{{.version}}"
 
