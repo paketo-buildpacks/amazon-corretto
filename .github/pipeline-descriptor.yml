@@ -49,3 +49,10 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-x64.tar.gz
     repository: corretto-21
+- name:            JDK 22
+  id:              jdk
+  version_pattern: "22\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/amazon-corretto-dependency:main
+  with:
+    glob:       amazon-corretto-[\d.-]+-linux-x64.tar.gz
+    repository: corretto-22
