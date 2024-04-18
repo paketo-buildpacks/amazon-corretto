@@ -69,6 +69,7 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
     repository: corretto-8
+    arch: arm64
 - name:            JDK 11 ARM64
   id:              jdk
   version_pattern: "11\\.[\\d]+\\.[\\d]+"
@@ -76,6 +77,7 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
     repository: corretto-11
+    arch: arm64
 - name:            JDK 17 ARM64
   id:              jdk
   version_pattern: "17\\.[\\d]+\\.[\\d]+"
@@ -83,6 +85,7 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
     repository: corretto-17
+    arch: arm64
 - name:            JDK 21 ARM64
   id:              jdk
   version_pattern: "21\\.[\\d]+\\.[\\d]+"
@@ -90,6 +93,7 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
     repository: corretto-21
+    arch: arm64
 - name:            JDK 22 ARM64
   id:              jdk
   version_pattern: "22\\.[\\d]+\\.[\\d]+"
@@ -97,3 +101,4 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
     repository: corretto-22
+    arch: arm64
