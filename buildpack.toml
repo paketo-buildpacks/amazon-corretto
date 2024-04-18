@@ -27,15 +27,6 @@ api = "0.7"
     type = "Apache-2.0"
     uri = "https://github.com/paketo-buildpacks/amazon-corretto/blob/main/LICENSE"
 
-[[targets]]
-os = "linux"
-arch = "amd64"
-
-[[targets]]
-os = "linux"
-arch = "arm64"
-
-
 [metadata]
   include-files = ["LICENSE", "NOTICE", "README.md", "linux/amd64/bin/build", "linux/amd64/bin/detect", "linux/amd64/bin/main", "linux/amd64/bin/helper", "linux/arm64/bin/build", "linux/arm64/bin/detect", "linux/arm64/bin/main", "linux/arm64/bin/helper", "buildpack.toml"]
   pre-package = "scripts/build.sh"
@@ -238,11 +229,11 @@ arch = "arm64"
     stacks = ["*"]
     uri = "https://corretto.aws/downloads/resources/8.412.08.1/amazon-corretto-8.412.08.1-linux-aarch64.tar.gz"
     version = "8.0.412"
-    
+
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
-  
+
   [[metadata.dependencies]]
     cpes = ["cpe:2.3:a:oracle:jdk:11.0.23:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:11.0.23:*:*:*:*:*:*:*"]
     id = "jdk"
@@ -254,11 +245,11 @@ arch = "arm64"
     stacks = ["*"]
     uri = "https://corretto.aws/downloads/resources/11.0.23.9.1/amazon-corretto-11.0.23.9.1-linux-aarch64.tar.gz"
     version = "11.0.23"
-    
+
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
-  
+
   [[metadata.dependencies]]
     cpes = ["cpe:2.3:a:oracle:jdk:17.0.11:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:17.0.11:*:*:*:*:*:*:*"]
     id = "jdk"
@@ -270,11 +261,11 @@ arch = "arm64"
     stacks = ["*"]
     uri = "https://corretto.aws/downloads/resources/17.0.11.9.1/amazon-corretto-17.0.11.9.1-linux-aarch64.tar.gz"
     version = "17.0.11"
-    
+
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
-  
+
   [[metadata.dependencies]]
     cpes = ["cpe:2.3:a:oracle:jdk:21.0.3:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:21.0.3:*:*:*:*:*:*:*"]
     id = "jdk"
@@ -286,26 +277,34 @@ arch = "arm64"
     stacks = ["*"]
     uri = "https://corretto.aws/downloads/resources/21.0.3.9.1/amazon-corretto-21.0.3.9.1-linux-aarch64.tar.gz"
     version = "21.0.3"
-    
+
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
-  
+
   [[metadata.dependencies]]
     cpes = ["cpe:2.3:a:oracle:jdk:22.0.1:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:22.0.1:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Corretto JDK"
     purl = "pkg:generic/amazon/corretto-jdk@22.0.1?arch=arm64"
-    sha256 = "blank"
+    sha256 = "bbb9f36b36c1b3adec3fdab68755acc9c985fa279e2bd420d14e4d2157499345"
     source = "https://github.com/corretto/corretto-22/archive/refs/tags/22.0.1.8.1.tar.gz"
     source-sha256 = "ae9c2ca3d7a3ec4e8385eff60ed110f54cf955149556baf5764ee104a0684cd1"
     stacks = ["*"]
     uri = "https://corretto.aws/downloads/resources/22.0.1.8.1/amazon-corretto-22.0.1.8.1-linux-aarch64.tar.gz"
     version = "22.0.1"
-    
+
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
       uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
 
 [[stacks]]
   id = "*"
+
+[[targets]]
+  arch = "amd64"
+  os = "linux"
+
+[[targets]]
+  arch = "arm64"
+  os = "linux"
