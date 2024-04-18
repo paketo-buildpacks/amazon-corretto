@@ -239,7 +239,7 @@ api = "0.7"
     id = "jdk"
     name = "Corretto JDK"
     purl = "pkg:generic/amazon/corretto-jdk@11.0.23?arch=arm64"
-    sha256 = "blank"
+    sha256 = "41f4f522a441c7238726ce7c80dcfb346ac93e8a6924692d37c9c77b7b8d8407"
     source = "https://github.com/corretto/corretto-11/archive/refs/tags/11.0.23.9.1.tar.gz"
     source-sha256 = "40b085766025c363a599e4849c86d7520651d2cbb48e22b633ea5fd5f5401ecb"
     stacks = ["*"]
