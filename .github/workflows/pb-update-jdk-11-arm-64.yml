@@ -27,6 +27,7 @@ jobs:
             - id: dependency
               uses: docker://ghcr.io/paketo-buildpacks/actions/amazon-corretto-dependency:main
               with:
+                arch: arm64
                 glob: amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
                 repository: corretto-11
             - name: Update Buildpack Dependency
@@ -75,7 +76,7 @@ jobs:
                 echo "new-version=${VERSION}" >> "$GITHUB_OUTPUT"
                 echo "version-label=${LABEL}" >> "$GITHUB_OUTPUT"
               env:
-                ARCH: ""
+                ARCH: arm64
                 CPE: ${{ steps.dependency.outputs.cpe }}
                 CPE_PATTERN: ""
                 ID: jdk
