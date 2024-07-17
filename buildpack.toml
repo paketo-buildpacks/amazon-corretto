@@ -139,16 +139,16 @@ api = "0.7"
     name = "JAVA_TOOL_OPTIONS"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update412:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:1.8.0:update412:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update422:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:1.8.0:update422:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Corretto JDK"
     purl = "pkg:generic/amazon/corretto-jdk@8.0.402?arch=amd64"
-    sha256 = "f3061601f1774aa0a52804a4a744b8c3eae93a9e6d289ad80576faa3e8d99cb1"
-    source = "https://github.com/corretto/corretto-8/archive/refs/tags/8.412.08.1.tar.gz"
-    source-sha256 = "920829e59916a634b2aa4e8b6a2c4b3fbec2afcdc7a95df1d3a4ec7ceeb561b0"
+    sha256 = "065de7f9a700b1fb65990325f137a96ee49bed0b2be708463fe7695fcd36e0df"
+    source = "https://github.com/corretto/corretto-8/archive/refs/tags/8.422.05.1.tar.gz"
+    source-sha256 = "71ed61da1ee4009d4f1ac99c030ff66013771fdc1440258afb370d1839fa8686"
     stacks = ["*"]
-    uri = "https://corretto.aws/downloads/resources/8.412.08.1/amazon-corretto-8.412.08.1-linux-x64.tar.gz"
-    version = "8.0.412"
+    uri = "https://corretto.aws/downloads/resources/8.422.05.1/amazon-corretto-8.422.05.1-linux-x64.tar.gz"
+    version = "8.0.422"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
