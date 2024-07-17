@@ -142,7 +142,7 @@ api = "0.7"
     cpes = ["cpe:2.3:a:oracle:jdk:1.8.0:update422:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:1.8.0:update422:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Corretto JDK"
-    purl = "pkg:generic/amazon/corretto-jdk@8.0.402?arch=amd64"
+    purl = "pkg:generic/amazon/corretto-jdk@8.0.422?arch=amd64"
     sha256 = "065de7f9a700b1fb65990325f137a96ee49bed0b2be708463fe7695fcd36e0df"
     source = "https://github.com/corretto/corretto-8/archive/refs/tags/8.422.05.1.tar.gz"
     source-sha256 = "71ed61da1ee4009d4f1ac99c030ff66013771fdc1440258afb370d1839fa8686"
