@@ -52,13 +52,13 @@ dependencies:
   with:
     glob:       amazon-corretto-[\d.-]+-linux-x64.tar.gz
     repository: corretto-21
-- name:            JDK 22
+- name:            JDK 23
   id:              jdk
-  version_pattern: "22\\.[\\d]+\\.[\\d]+"
+  version_pattern: "23\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/amazon-corretto-dependency:main
   with:
     glob:       amazon-corretto-[\d.-]+-linux-x64.tar.gz
-    repository: corretto-22
+    repository: corretto-23
 
 # ARM64
 - name:            JDK 8 ARM64
@@ -94,11 +94,11 @@ dependencies:
     glob:       amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
     repository: corretto-21
     arch: arm64
-- name:            JDK 22 ARM64
+- name:            JDK 23 ARM64
   id:              jdk
-  version_pattern: "22\\.[\\d]+\\.[\\d]+"
+  version_pattern: "23\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/amazon-corretto-dependency:main
   with:
     glob:       amazon-corretto-[\d.-]+-linux-aarch64.tar.gz
-    repository: corretto-22
+    repository: corretto-23
     arch: arm64
