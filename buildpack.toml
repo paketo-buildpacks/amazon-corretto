@@ -207,11 +207,11 @@ api = "0.7"
     id = "jdk"
     name = "Corretto JDK"
     purl = "pkg:generic/amazon/corretto-jdk@24.0.0?arch=amd64"
-    sha256 = "25fc8f4dc0aea35a7fcfa182cc289c058fcc33c1c26f907deabfa26bcfa749a1"
-    source = "https://github.com/corretto/corretto-24/archive/refs/tags/24.0.0.36.2.tar.gz"
-    source-sha256 = "ab809738a07d19ddcf0e9ae444420bae1f5d8e31a68ae1c58ee3a51e8a51a6c3"
+    sha256 = "530cc2a5404ff72c9cb7f342932940ea02609d6ea929b1528ccd656cf1aa260f"
+    source = "https://github.com/corretto/corretto-24/archive/refs/tags/24.0.0.36.3.tar.gz"
+    source-sha256 = "e9146530930cb4de6c6d01d9c43c4606bd460d0d73051fcf97920b9e533eaced"
     stacks = ["*"]
-    uri = "https://corretto.aws/downloads/resources/24.0.0.36.2/amazon-corretto-24.0.0.36.2-linux-x64.tar.gz"
+    uri = "https://corretto.aws/downloads/resources/24.0.0.36.3/amazon-corretto-24.0.0.36.3-linux-x64.tar.gz"
     version = "24.0.0"
 
     [[metadata.dependencies.licenses]]
