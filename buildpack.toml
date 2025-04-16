@@ -267,16 +267,16 @@ api = "0.7"
       uri = "https://aws.amazon.com/corretto/faqs/#Licensing_and_Open_Source"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:oracle:jdk:21.0.6:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:21.0.6:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:oracle:jdk:21.0.7:*:*:*:*:*:*:*", "cpe:2.3:a:amazon:corretto:21.0.7:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "Corretto JDK"
-    purl = "pkg:generic/amazon/corretto-jdk@21.0.6?arch=arm64"
-    sha256 = "3cb9d8553655ffb5e3992f8ee1822ed8e179b69d56058b0eb6a1aacc30668c8f"
-    source = "https://github.com/corretto/corretto-21/archive/refs/tags/21.0.6.7.1.tar.gz"
-    source-sha256 = "8116d24f68d1534e1e8f51191d0a5f8f846fe394f825ad28feaf5c5bd0a675b5"
+    purl = "pkg:generic/amazon/corretto-jdk@21.0.7?arch=arm64"
+    sha256 = "21dd5493e413fbc06f8b5905b1d5c58efccdac4aae0d28ba3425e7857270ba66"
+    source = "https://github.com/corretto/corretto-21/archive/refs/tags/21.0.7.6.1.tar.gz"
+    source-sha256 = "2d3840c74df170c7a3fe2a384fe78f1ee30566936467341840382019edfda348"
     stacks = ["*"]
-    uri = "https://corretto.aws/downloads/resources/21.0.6.7.1/amazon-corretto-21.0.6.7.1-linux-aarch64.tar.gz"
-    version = "21.0.6"
+    uri = "https://corretto.aws/downloads/resources/21.0.7.6.1/amazon-corretto-21.0.7.6.1-linux-aarch64.tar.gz"
+    version = "21.0.7"
 
     [[metadata.dependencies.licenses]]
       type = "GPL-2.0 WITH Classpath-exception-2.0"
