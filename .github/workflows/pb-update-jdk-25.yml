@@ -1,4 +1,4 @@
-name: Update JDK 24
+name: Update JDK 25
 "on":
     schedule:
         - cron: 0 5 * * 1-5
@@ -28,7 +28,7 @@ jobs:
               uses: docker://ghcr.io/paketo-buildpacks/actions/amazon-corretto-dependency:main
               with:
                 glob: amazon-corretto-[\d.-]+-linux-x64.tar.gz
-                repository: corretto-24
+                repository: corretto-25
             - name: Update Buildpack Dependency
               id: buildpack
               run: |
@@ -86,18 +86,18 @@ jobs:
                 SOURCE_URI: ${{ steps.dependency.outputs.source }}
                 URI: ${{ steps.dependency.outputs.uri }}
                 VERSION: ${{ steps.dependency.outputs.version }}
-                VERSION_PATTERN: 24\.[\d]+\.[\d]+
+                VERSION_PATTERN: 25\.[\d]+\.[\d]+
             - uses: peter-evans/create-pull-request@v6
               with:
                 author: ${{ secrets.JAVA_GITHUB_USERNAME }} <${{ secrets.JAVA_GITHUB_USERNAME }}@users.noreply.github.com>
-                body: Bumps `JDK 24` from `${{ steps.buildpack.outputs.old-version }}` to `${{ steps.buildpack.outputs.new-version }}`.
-                branch: update/buildpack/jdk-24
+                body: Bumps `JDK 25` from `${{ steps.buildpack.outputs.old-version }}` to `${{ steps.buildpack.outputs.new-version }}`.
+                branch: update/buildpack/jdk-25
                 commit-message: |-
-                    Bump JDK 24 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
+                    Bump JDK 25 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
 
-                    Bumps JDK 24 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}.
+                    Bumps JDK 25 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}.
                 delete-branch: true
                 labels: ${{ steps.buildpack.outputs.version-label }}, type:dependency-upgrade
                 signoff: true
-                title: Bump JDK 24 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
+                title: Bump JDK 25 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
                 token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
