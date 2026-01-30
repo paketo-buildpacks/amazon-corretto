@@ -175,11 +175,11 @@ api = "0.7"
     id = "jdk"
     name = "Corretto JDK"
     purl = "pkg:generic/amazon/corretto-jdk@17.0.18?arch=amd64"
-    sha256 = "46562885554ed2d2889a9dba95cfded50b5d988f282bab211d04cf985802c859"
-    source = "https://github.com/corretto/corretto-17/archive/refs/tags/17.0.18.8.1.tar.gz"
-    source-sha256 = "b400798c865a547eb79809a816aa82282ec2363b8e8ebbe06cfc809cc6adbf2b"
+    sha256 = "87411b0792a0f2b8e0fef1178c012bfe338b5f5fedb8c1e7985213cb7f790428"
+    source = "https://github.com/corretto/corretto-17/archive/refs/tags/17.0.18.9.1.tar.gz"
+    source-sha256 = "80bec6f99fdc5bc9071dcfa72577ed65cde822f7de50ad2a208c78466702b05b"
     stacks = ["*"]
-    uri = "https://corretto.aws/downloads/resources/17.0.18.8.1/amazon-corretto-17.0.18.8.1-linux-x64.tar.gz"
+    uri = "https://corretto.aws/downloads/resources/17.0.18.9.1/amazon-corretto-17.0.18.9.1-linux-x64.tar.gz"
     version = "17.0.18"
 
     [[metadata.dependencies.licenses]]
