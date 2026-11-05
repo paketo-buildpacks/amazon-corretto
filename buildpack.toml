@@ -241,7 +241,7 @@ api = "0.7"
     purl = "pkg:generic/amazon/corretto-jdk@8.0.492?arch=arm64"
     sha256 = "0115aad5747b262c7ae0e7f3ae1fc20933f3950843cfa365b49eca7be0c84a90"
     source = "https://github.com/corretto/corretto-8/archive/refs/tags/8.512.09.1.tar.gz"
-    source-sha256 = "d4b7a6db238633fd07132c942bc09e3d46da90e6bd549d4ff3d9acfc12fc1cf3"
+    source-sha256 = "ca73085d35b9a9a44527ed41deb7aa4ce38a9b7976a62c3f19fd0455780c6997"
     stacks = ["*"]
     uri = "https://corretto.aws/downloads/resources/8.512.09.1/amazon-corretto-8.512.09.1-linux-aarch64.tar.gz"
     version = "8.0.512"
